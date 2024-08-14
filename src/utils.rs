@@ -73,6 +73,7 @@ pub fn convert_data_type(data_type: &str) -> String {
         "timestamp" => "chrono::NaiveDateTime",
         "timestamptz" => "chrono::DateTime<chrono::Utc>",
         "uuid" => "uuid::Uuid",
+        "cube" => "sqlx::postgres::types::PgCube",
         _ => panic!("Unknown type: {}", data_type),
     }
     .to_string()

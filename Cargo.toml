@@ -6,8 +6,8 @@ description = "A CLI tool for generating models based on a SQL Database using SQ
 license = "MIT"
 
 [dependencies]
-sqlx = { version = "0.7", features = ["postgres","runtime-tokio"] }
-sqlx-cli = "0.7"
+sqlx = { version = "0.8", features = ["postgres","runtime-tokio"] }
+sqlx-cli = "0.8"
 clap = "3.0"
 regex = "1.5"
 chrono = "0.4"
